@@ -3,7 +3,7 @@ body {
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    color: #0072E2;
+    color: #0072e2;
     font-family: 'Lato', sans-serif;
 }
 
@@ -11,16 +11,16 @@ body {
     border-radius: 15px;
     border-width: 4px;
     border-style: solid;
-    border-color: #8BB7E2;
+    border-color: #8bb7e2;
 }
 
 hr {
     height: 5px;
-    background-color: #8BB7E2;
+    background-color: #8bb7e2;
 }
 
 .text-muted {
-    color: #BCBBBB;
+    color: #bcbbbb;
 }
 
 .text-thin {
