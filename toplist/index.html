@@ -8,7 +8,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -20,7 +20,7 @@
 			<div class="col-md-6 text-right text-uppercase">
 				<h1 class="title-super text-thin">Zen Sun</h1>
 				<h4>Front-end Padowan</h4>
-				<p class="text-muted">(under Udacity training)</p>
+				<p class="text-muted text-lowercase">(under Udacity tutelage)</p>
 			</div>
 		</div>
 		<div class = "row">
@@ -30,7 +30,7 @@
 		</div>
 		<div class = "row">
 			<div class = "col-md-12">
-				<img src="images/cheetah.PNG" class="img-responsive" class="Cheetah chase screenshot">
+				<img src="images/cheetah.PNG" class="img-responsive" alt="Cheetah chase screenshot">
 			</div>
 		</div>
 
@@ -39,21 +39,39 @@
 				<h2 class="text-muted">Featured Work</h2>
 			</div>
 		</div>
-		<div class = "row text-center">
+		<div class = "row">
 			<div class = "col-md-4">
-				<img src="images/bullie1.JPG" class="img-responsive center-block" alt="Appify screenshot" data-toggle="modal" data-target="#project1">
-				<h3 class="text-uppercase">Appify</h3>
-				<p><a href="https://github.com/aerozen3/">https://github.com/udacity/Appify</a></p>
+				<a href="https://github.com/aerozen3/">
+					<article class="caption">
+						<img src="images/bullie1.JPG" class="caption__media img-responsive center-block" alt="Appify screenshot" data-toggle="modal" data-target="#project1">
+						<div class = "caption__overlay">
+							<h3 class="caption__overlay__title text-uppercase">Appify</h3>
+							<p class="caption__overlay__content">https://github.com/udacity/Appify</p>
+						</div>
+					</article>
+				</a>
 			</div>
 			<div class = "col-md-4">
-				<img src="images/monkey.JPG" class="img-responsive center-block" alt="Sunflower screenshot">
-				<h3 class="text-uppercase">Sunflower</h3>
-				<p><a href="https://github.com/aerozen3/">https://github.com/udacity/Sunflower</a></p>
+				<a href="https://github.com/aerozen3/">
+					<article class="caption">
+						<img src="images/monkey.JPG" class="caption__media img-responsive center-block" alt="Sunflower screenshot">
+						<div class = "caption__overlay">
+							<h3 class="caption__overlay__title text-uppercase">Sunflower</h3>
+							<p class="caption__overlay__content">https://github.com/udacity/Sunflower</p>
+						</div>
+					</article>
+				</a>
 			</div>
 			<div class = "col-md-4">
-				<img src="images/bullie2.JPG" class="img-responsive center-block" alt="Bokeh screenshot">
-				<h3 class="text-uppercase">Bokeh</h3>
-				<p><a href="https://github.com/aerozen3/">https://github.com/udacity/Bokeh</a></p>
+				<a href="https://github.com/aerozen3/">
+					<article class="caption">
+						<img src="images/bullie2.JPG" class="caption__media img-responsive center-block" alt="Bokeh screenshot">
+						<div class = "caption__overlay">
+							<h3 class="caption__overlay__title text-uppercase">Bokeh</h3>
+							<p class="caption__overlay__content">https://github.com/udacity/Bokeh</p>
+						</div>
+					</article>
+				</a>
 			</div>
 		</div>		
 	</div>
@@ -66,7 +84,7 @@
 					<h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
 				</div>
 				<div class="modal-body">
-					<img class="img-responsive" src="images/555.jpeg">
+					<img class="img-responsive" src="images/bullie1.jpeg" alt="Bulldog">
 					This was my first project in this class. I learned a lot about HTML and CSS.
 				</div>
 				<div class="modal-footer">
@@ -75,6 +93,6 @@
 			</div>
 		</div>
 	</div>
-
-</body>
+	<footer class="footer text-center text-muted">Text effect from maketea.co.uk</footer>
+ </body>
 </html>
