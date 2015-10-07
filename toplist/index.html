@@ -8,8 +8,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="import" href="elements/image-caption.html">
 </head>
 <body>
 	<div class="container">
@@ -20,13 +22,45 @@
 				</div>
 				<div class="col-md-6 text-right text-uppercase">
 					<h1 class="title-super text-thin">Zen Sun</h1>
-					<h4>Front-end Padowan</h4>
+					<h4>Front-end Padawan</h4>
 					<p class="text-muted text-lowercase">(under Udacity tutelage)</p>
 				</div>
 			</div>
 			<div class = "row">
 				<div class = "col-md-12">
-					<hr/>
+					<nav class="navbar navbar-default">
+						<div class="container-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="#">Zen</a>
+							</div>
+
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="https://github.com/aerozen3/">Appify</a></li>
+											<li><a href="https://github.com/aerozen3/">Sunflower</a></li>
+											<li><a href="https://github.com/aerozen3/">Bokeh</a></li>
+										</ul>
+									</li>
+								</ul>
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="#">About</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</div><!-- /.navbar-collapse -->
+						</div><!-- /.container-fluid -->
+					</nav>
 				</div>
 			</div>
 		</header>
@@ -46,37 +80,13 @@
 				</header>
 				<div class = "row">
 					<div class = "col-md-4">
-						<a href="https://github.com/aerozen3/">
-							<article class="caption">
-								<img src="images/bullie1.JPG" class="caption__media img-responsive center-block" alt="Appify screenshot" data-toggle="modal" data-target="#project1">
-								<div class = "caption__overlay">
-									<h3 class="caption__overlay__title text-uppercase">Appify</h3>
-									<p class="caption__overlay__content">https://github.com/udacity/Appify</p>
-								</div>
-							</article>
-						</a>
+						<image-caption name="Appify" url="https://github.com/udacity/Appify" imageurl="images/bullie1.JPG"></image-caption>
 					</div>
 					<div class = "col-md-4">
-						<a href="https://github.com/aerozen3/">
-							<article class="caption">
-								<img src="images/monkey.JPG" class="caption__media img-responsive center-block" alt="Sunflower screenshot">
-								<div class = "caption__overlay">
-									<h3 class="caption__overlay__title text-uppercase">Sunflower</h3>
-									<p class="caption__overlay__content">https://github.com/udacity/Sunflower</p>
-								</div>
-							</article>
-						</a>
+						<image-caption name="Sunflower" url="https://github.com/udacity/Sunflower" imageurl="images/monkey.JPG"></image-caption>
 					</div>
 					<div class = "col-md-4">
-						<a href="https://github.com/aerozen3/">
-							<article class="caption">
-								<img src="images/bullie2.JPG" class="caption__media img-responsive center-block" alt="Bokeh screenshot">
-								<div class = "caption__overlay">
-									<h3 class="caption__overlay__title text-uppercase">Bokeh</h3>
-									<p class="caption__overlay__content">https://github.com/udacity/Bokeh</p>
-								</div>
-							</article>
-						</a>
+						<image-caption name="Bokeh" url="https://github.com/udacity/Bokeh" imageurl="images/bullie2.JPG"></image-caption>
 					</div>
 				</div>
 			</section>

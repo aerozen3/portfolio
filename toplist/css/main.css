@@ -7,6 +7,15 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+img, embed, object, video {
+    max-width: : 100%;
+}
+
+nav a, button {
+    min-width: 48px;
+    min-height: 48 px;
+}
+
 .img-border {
     border-radius: 15px;
     border-width: 4px;
@@ -14,17 +23,12 @@ body {
     border-color: #8bb7e2;
 }
 
-hr {
-    height: 5px;
-    background-color: #8bb7e2;
-}
-
 .text-muted {
     color: #bcbbbb;
 }
 
 .text-thin {
-    font-weight: 100;   
+    font-weight: 100;
 }
 
 .title-logo {
@@ -35,10 +39,13 @@ hr {
     font-size: 60px;
 }
 
+.navbar {
+    margin-top: 15px;
+}
 
 /*
- * Below is taken from http://maketea.co.uk/, specifically here http://jsfiddle.net/7GvV2/574/
- * 
+ * Text popups on images taken from http://maketea.co.uk/, specifically here http://jsfiddle.net/7GvV2/574/
+ *
  * Housekeeping
  */
 
