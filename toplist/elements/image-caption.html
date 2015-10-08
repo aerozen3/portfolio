@@ -3,7 +3,7 @@
 <template>
 	<a href="{{url}}">
 		<article class="caption">
-			<img src="{{imageurl}}" class="caption__media img-responsive center-block" alt="{{name}} screenshot" title="{{name}} screenshot">
+			<img src="{{imgsrc}}" class="caption__media img-responsive center-block" alt="{{name}} screenshot" title="{{name}} screenshot">
 			<div class = "caption__overlay">
 				<h3 class="caption__overlay__title text-uppercase">{{name}}</h3>
 				<p class="caption__overlay__content">{{url}}</p>
@@ -24,9 +24,9 @@ Polymer({
 			type: String,
 			value: "Project URL"
 		},
-		imageurl: {
+		imgsrc: {
 			type: String,
-			value: "Image URL"
+			value: "Image src"
 		}
 	}
 });
